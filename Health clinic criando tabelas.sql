@@ -59,7 +59,7 @@ IdConsulta INT PRIMARY KEY IDENTITY,
 IdMedico INT FOREIGN KEY REFERENCES Medico(IdMedico),
 IdPaciente INT FOREIGN KEY REFERENCES Paciente(IdPaciente),
 DataConsulta DATE NOT NULL,
-HorarioConsulta TIME NOT NULL,
+HorarioConsulta TIME(0) NOT NULL,
 Descricao VARCHAR(100) NOT NULL
 )
 
