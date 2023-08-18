@@ -26,24 +26,3 @@ INSERT INTO Comentario(IdConsulta, Comentario)
 VALUES(2,'Doutor muito bem informado e sabe oque esta fazendo!')
 
 
- 
-
- select 
- Consulta.IdConsulta as Consulta,
- Consulta.DataConsulta ,
- Consulta.HorarioConsulta,
- Clinica.NomeFantasia as Clinica,
- Paciente.Nome as Paciente,
- Medico.Nome as Medico,
- Especialidade.NomeEspecialidade as Especialidade,
- Medico.CRM,
- Prontuario.DescricaoProntuario as Prontuario,
- Comentario.Comentario
- from 
- Consulta, Clinica, Paciente, Especialidade, Medico, Prontuario, Comentario
- WHERE
- Paciente.IdPaciente = Consulta.IdPaciente and
- Medico.IdMedico = Consulta.IdMedico and
- Especialidade.IdEspecialidade = Medico.IdEspecialidade and
- Prontuario.IdConsulta = Consulta.IdConsulta and
- Comentario.IdConsulta = Consulta.IdConsulta
