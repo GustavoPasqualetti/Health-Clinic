@@ -20,6 +20,11 @@ namespace HealthClinic_cd.Controllers
             _prontuarioRepository = new ProntuarioRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar um prontuario
+        /// </summary>
+        /// <param name="prontuario"></param>
+        /// <returns></returns>
         [HttpPost]
       //  [Authorize(Roles = "Medico,administrador")]
         public IActionResult Post(Prontuario prontuario)
@@ -35,6 +40,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de buscar um prontuario pelo id da consulta
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
        // [Authorize(Roles = "Paciente,Medico,administrador")]
         public IActionResult BuscarPorIdConsulta(Guid id)
@@ -49,6 +59,12 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de atualizar um prontuario pelo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="prontuario"></param>
+        /// <returns></returns>
         [HttpPut]
        // [Authorize(Roles = "Medico,administrador")]
         public IActionResult Put(Guid id, Prontuario prontuario)

@@ -20,6 +20,11 @@ namespace HealthClinic_cd.Controllers
             _tipoDeUsuarioRepository = new TipoDeUsuarioRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar um tipo de usuario
+        /// </summary>
+        /// <param name="tipoDeUsuario"></param>
+        /// <returns></returns>
         [HttpPost]
        // [Authorize(Roles = "administrador")]
         public IActionResult Post(TipoDeUsuario tipoDeUsuario)
@@ -35,6 +40,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de deletar um tipo de usuario
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
        // [Authorize(Roles = "administrador")]
         public IActionResult Delete(Guid id)

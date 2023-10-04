@@ -20,6 +20,11 @@ namespace HealthClinic_cd.Controllers
             _comentarioRepository = new ComentarioRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar um comentario
+        /// </summary>
+        /// <param name="comentario"></param>
+        /// <returns></returns>
         [HttpPost]
         //[Authorize(Roles = "Paciente,Medico,administrador")]
         public IActionResult Post(Comentario comentario)
@@ -35,6 +40,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar um comentario pelo id da consulta
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet]
        // [Authorize(Roles = "Medico,administrador")]
         public IActionResult BuscarPorIdConsulta(Guid id)
@@ -49,6 +59,12 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de atualizar um comentario
+        /// </summary>
+        /// <param name="comentario"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPut]
        // [Authorize(Roles = "Paciente,Medico,administrador")]
         public IActionResult Put(Comentario comentario, Guid id)

@@ -20,6 +20,11 @@ namespace HealthClinic_cd.Controllers
             _medicoRepository = new MedicoRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar um medico
+        /// </summary>
+        /// <param name="medico"></param>
+        /// <returns></returns>
         [HttpPost]
        // [Authorize(Roles = "administrador")]
         public IActionResult Post(Medico medico)
@@ -35,6 +40,10 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar os medicos
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
        // [Authorize(Roles = "administrador")]
         public IActionResult Get()
@@ -49,6 +58,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de deletar um medico
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
        // [Authorize(Roles = "administrador")]
         public IActionResult Delete(Guid id)
@@ -64,6 +78,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar um medico pelo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
       //  [Authorize(Roles = "administrador")]
         public IActionResult Get(Guid id)

@@ -20,6 +20,11 @@ namespace HealthClinic_cd.Controllers
             _consultaRepository = new ConsultaRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar uma consulta
+        /// </summary>
+        /// <param name="consulta"></param>
+        /// <returns></returns>
         [HttpPost]
         //[Authorize(Roles = "administrador")]
         public IActionResult Post(Consulta consulta)
@@ -35,6 +40,10 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar as consultas
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         //[Authorize(Roles = "Paciente,Medico,administrador")]
         public IActionResult Get()
@@ -49,6 +58,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de deletar uma consulta
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         //[Authorize(Roles = "administrador")]
         public IActionResult Delete(Guid id)
@@ -64,6 +78,12 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de atualizar uma consulta pelo id
+        /// </summary>
+        /// <param name="consulta"></param>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpPut("{id}")]
         //[Authorize(Roles = "administrador")]
         public IActionResult Put(Consulta consulta, Guid id)
@@ -79,6 +99,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar uma consulta pelo id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpGet("{id}")]
         //[Authorize(Roles = "Paciente,Medico,administrador")]
         public IActionResult Get(Guid id)
@@ -93,6 +118,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar uma consulta do paciente
+        /// </summary>
+        /// <param name="IdPaciente"></param>
+        /// <returns></returns>
         [HttpGet("IdPaciente")]
         //[Authorize(Roles = "Paciente,administrador")]
         public IActionResult BuscarIdPaciente(Guid IdPaciente)
@@ -107,6 +137,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar uma consulta ddo medico
+        /// </summary>
+        /// <param name="IdMedico"></param>
+        /// <returns></returns>
         [HttpGet("IdMedico")]
         //[Authorize(Roles = "Medico,administrador")]
         public IActionResult BuscarIdMedico(Guid IdMedico)

@@ -19,6 +19,11 @@ namespace HealthClinic_cd.Controllers
             _clinicaRepository = new ClinicaRepository();
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de cadastrar uma clinica
+        /// </summary>
+        /// <param name="clinica"></param>
+        /// <returns></returns>
         [HttpPost]
        // [Authorize(Roles ="administrador")]
         public IActionResult Post(Clinica clinica)
@@ -34,6 +39,10 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de listar as clinicas cadastradas
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
        // [Authorize(Roles = "administrador")]
         public IActionResult Get()
@@ -48,6 +57,11 @@ namespace HealthClinic_cd.Controllers
             }
         }
 
+        /// <summary>
+        /// Endpoint que recebe o metodo de deletar uma clinica
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
        // [Authorize(Roles = "administrador")]
         public IActionResult Delete(Guid id)

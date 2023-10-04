@@ -3344,11 +3344,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49802004863\\Desktop\\HealthClinic\\HealthClinic_cd\\HealthClinic_cd.csproj",
+      "projectUniqueName": "C:\\Users\\49802004863\\Desktop\\Health-Clinic\\HealthClinic\\HealthClinic_cd\\HealthClinic_cd.csproj",
       "projectName": "HealthClinic_cd",
-      "projectPath": "C:\\Users\\49802004863\\Desktop\\HealthClinic\\HealthClinic_cd\\HealthClinic_cd.csproj",
+      "projectPath": "C:\\Users\\49802004863\\Desktop\\Health-Clinic\\HealthClinic\\HealthClinic_cd\\HealthClinic_cd.csproj",
       "packagesPath": "C:\\Users\\49802004863\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49802004863\\Desktop\\HealthClinic\\HealthClinic_cd\\obj\\",
+      "outputPath": "C:\\Users\\49802004863\\Desktop\\Health-Clinic\\HealthClinic\\HealthClinic_cd\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\49802004863\\AppData\\Roaming\\NuGet\\NuGet.Config",
