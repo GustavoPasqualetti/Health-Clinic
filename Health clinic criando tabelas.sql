@@ -1,0 +1,80 @@
+CREATE DATABASE HealthClinicManha, 
+
+USE HealthClinicManha
+
+CREATE TABLE Clinica
+(
+IdClinica INT PRIMARY KEY IDENTITY,
+Endereco VARCHAR(50) NOT NULL,
+HoraFuncionamento TIME NOT NULL,
+HorarioFechamento TIME NOT NULL,
+CNPJ CHAR(14) NOT NULL,
+NomeFantasia VARCHAR(30) NOT NULL,
+RazaoSocial VARCHAR(40) NOT NULL
+)
+
+
+
+CREATE TABLE TipoDeUsuario
+(
+IdTipoUsuario INT PRIMARY KEY IDENTITY,
+TituloTipoUsuario VARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Usuario
+(
+IdUsuario INT PRIMARY KEY IDENTITY,
+IdTipoUsuario INT FOREIGN KEY REFERENCES TipoDeUsuario(IdTipoUsuario),
+Email VARCHAR(40) NOT NULL,
+Senha VARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Especialidade
+(
+IdEspecialidade INT PRIMARY KEY IDENTITY,
+NomeEspecialidade VARCHAR(30) NOT NULL
+)
+
+CREATE TABLE Medico
+(
+IdMedico INT PRIMARY KEY IDENTITY,
+IdClinica INT FOREIGN KEY REFERENCES Clinica(IdClinica),
+IdEspecialidade INT FOREIGN KEY REFERENCES Especialidade(IdEspecialidade),
+IdUsuario INT FOREIGN KEY REFERENCES Usuario(IdUsuario),
+Nome VARCHAR(30) NOT NULL,
+CRM VARCHAR (10) NOT NULL
+)
+
+CREATE TABLE Paciente
+(
+IdPaciente INT PRIMARY KEY IDENTITY,
+IdUsuario INT FOREIGN KEY REFERENCES Usuario(IdUsuario),
+Nome VARCHAR(30)NOT NULL,
+CPF CHAR(11) NOT NULL
+)
+
+CREATE TABLE Consulta
+(
+IdConsulta INT PRIMARY KEY IDENTITY,
+IdMedico INT FOREIGN KEY REFERENCES Medico(IdMedico),
+IdPaciente INT FOREIGN KEY REFERENCES Paciente(IdPaciente),
+DataConsulta DATE NOT NULL,
+HorarioConsulta TIME(0) NOT NULL,
+Descricao VARCHAR(100) NOT NULL
+)
+
+CREATE TABLE Prontuario
+(
+IdProntuario INT PRIMARY KEY IDENTITY,
+IdConsulta INT FOREIGN KEY REFERENCES Consulta(IdConsulta),
+DescricaoProntuario VARCHAR(100) NOT NULL
+)
+
+CREATE TABLE Comentario
+(
+IdComentario INT PRIMARY KEY IDENTITY,
+IdConsulta INT FOREIGN KEY REFERENCES Consulta(IdConsulta),
+Comentario VARCHAR(100) NOT NULL
+)
+
+DROP TABLE Clinica

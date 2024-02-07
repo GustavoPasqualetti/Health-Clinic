@@ -1,0 +1,313 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HealthClinic_cd</name>
+    </assembly>
+    <members>
+        <member name="M:HealthClinic_cd.Controllers.ClinicaController.Post(HealthClinic_cd.Domains.Clinica)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar uma clinica
+            </summary>
+            <param name="clinica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ClinicaController.Get">
+            <summary>
+            Endpoint que recebe o metodo de listar as clinicas cadastradas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ClinicaController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar uma clinica
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ComentarioController.Post(HealthClinic_cd.Domains.Comentario)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um comentario
+            </summary>
+            <param name="comentario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ComentarioController.BuscarPorIdConsulta(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar um comentario pelo id da consulta
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ComentarioController.Put(HealthClinic_cd.Domains.Comentario,System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de atualizar um comentario
+            </summary>
+            <param name="comentario"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.Post(HealthClinic_cd.Domains.Consulta)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar uma consulta
+            </summary>
+            <param name="consulta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.Get">
+            <summary>
+            Endpoint que recebe o metodo de listar as consultas
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar uma consulta
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.Put(HealthClinic_cd.Domains.Consulta,System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de atualizar uma consulta pelo id
+            </summary>
+            <param name="consulta"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.Get(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar uma consulta pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.BuscarIdPaciente(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar uma consulta do paciente
+            </summary>
+            <param name="IdPaciente"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ConsultaController.BuscarIdMedico(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar uma consulta ddo medico
+            </summary>
+            <param name="IdMedico"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.EspecialidadeController.Post(HealthClinic_cd.Domains.Especialidade)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar uma especialidade
+            </summary>
+            <param name="especialidade"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.EspecialidadeController.Get">
+            <summary>
+            Endpoint que recebe o metodo de listar as especialidades
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.EspecialidadeController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar uma especialidade
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.LoginController.Post(HealthClinic_cd.ViewModels.LoginViewModel)">
+            <summary>
+            Endpoint que recebe o metodo de logar um usuario
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.MedicoController.Post(HealthClinic_cd.Domains.Medico)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um medico
+            </summary>
+            <param name="medico"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.MedicoController.Get">
+            <summary>
+            Endpoint que recebe o metodo de listar os medicos
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.MedicoController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar um medico
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.MedicoController.Get(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar um medico pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.PacienteController.Post(HealthClinic_cd.Domains.Paciente)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um paciente
+            </summary>
+            <param name="paciente"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.PacienteController.Get">
+            <summary>
+            Endpoint que recebe o metodo de listar os pacientes
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.PacienteController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar um paciente
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.PacienteController.Get(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar um paciente pelo id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ProntuarioController.Post(HealthClinic_cd.Domains.Prontuario)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um prontuario
+            </summary>
+            <param name="prontuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ProntuarioController.BuscarPorIdConsulta(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de buscar um prontuario pelo id da consulta
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.ProntuarioController.Put(System.Guid,HealthClinic_cd.Domains.Prontuario)">
+            <summary>
+            Endpoint que recebe o metodo de atualizar um prontuario pelo id
+            </summary>
+            <param name="id"></param>
+            <param name="prontuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.TipoDeUsuarioController.Post(HealthClinic_cd.Domains.TipoDeUsuario)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um tipo de usuario
+            </summary>
+            <param name="tipoDeUsuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.TipoDeUsuarioController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar um tipo de usuario
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.UsuarioController.Post(HealthClinic_cd.Domains.Usuario)">
+            <summary>
+            Endpoint que recebe o metodo de cadastrar um usuario
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.UsuarioController.BuscarPorEmaileSenha(System.String,System.String)">
+            <summary>
+            Endpoint que recebe o metodo de buscar um usuario pelo email e senha
+            </summary>
+            <param name="email"></param>
+            <param name="senha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de deletar um usuario
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.UsuarioController.Get(System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de listar um usuario pelo seu id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HealthClinic_cd.Controllers.UsuarioController.Put(HealthClinic_cd.Domains.Usuario,System.Guid)">
+            <summary>
+            Endpoint que recebe o metodo de atualizar um usuario pelo id
+            </summary>
+            <param name="usuario"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HealthClinic_cd.Migrations.Bd2">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HealthClinic_cd.Migrations.bd3">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.bd3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.bd3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.bd3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HealthClinic_cd.Migrations.Bd4">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd4.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd4.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd4.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HealthClinic_cd.Migrations.Bd5">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd5.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd5.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd5.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:HealthClinic_cd.Migrations.Bd6">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd6.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd6.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:HealthClinic_cd.Migrations.Bd6.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
